@@ -1,0 +1,3 @@
+[2020-09-02 14:42:38.021] [sharedprocess] [info] main {"machineId":"dc2cdfd0c721d03ea8784d549382420655e576271c49301cea0df06ae04e3a46","windowId":2}
+[2020-09-02 14:42:38.100] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/richsouth/.config/VSCodium/User/snippets'
+[2020-09-02 14:43:18.049] [sharedprocess] [info] Starting to clean up unused language packs.

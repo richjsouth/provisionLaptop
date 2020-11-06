@@ -1,0 +1,9 @@
+[submodule "mypolybar"]
+	path = mypolybar
+	url = https://github.com/richjsouth/Polybar.git
+[submodule "Polybar"]
+	path = Polybar
+	url = https://github.com/richjsouth/Polybar.git
+[submodule "myPolybar"]
+	path = myPolybar
+	url = https://github.com/richjsouth/Polybar.git
