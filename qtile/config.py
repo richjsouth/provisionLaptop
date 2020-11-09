@@ -24,7 +24,8 @@ keys = [
              desc='Launches My Terminal'
              ),
          Key([mod, "shift"], "Return",
-             lazy.spawn("dmenu_run -p 'Run: ' -fn 'Ubuntu Mono:bold:pixelsize=13' -nb '#333333' -nf '#bbbbff' -sf '#fdf6e3' -sb '#b58900'  "),
+             # lazy.spawn("dmenu_run -p 'Run: ' -fn 'Ubuntu Mono:bold:pixelsize=13' -nb '#333333' -nf '#bbbbff' -sf '#fdf6e3' -sb '#b58900'  "),
+             lazy.spawn("rofi -show drun -font 'Noto Sans 8'"), 
              desc='Dmenu Run Launcher'
              ),
          Key([mod], "Tab",
