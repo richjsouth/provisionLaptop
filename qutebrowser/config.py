@@ -159,8 +159,11 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
  ########################
 
 # Setting DarkMode 
-config.set("colors.webpage.darkmode.enabled", True)
+# config.set("colors.webpage.darkmode.enabled", True)
 
 # Keybindings
 config.bind('P', 'hint links spawn mpv {hint-url}')
 config.bind('D', 'hint links spawn st -e youtube-dl {hint-url}')
+
+config.bind(',sd', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized/css/solarized-dark/solarized-dark-all-sites.css ""')
+config.bind(',sl', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/solarized/css/solarized-light/solarized-light-all-sites.css ""')
