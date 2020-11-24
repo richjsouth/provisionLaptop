@@ -122,6 +122,12 @@ keys = [
              lazy.window.toggle_fullscreen(),
              desc='toggle fullscreen'
              ),
+         Key([mod, "shift"], "l",
+              lazy.spawn("./.config/i3lock/lock.sh"),
+              desc='Lock the screen'
+         ),
+
+
          ### Stack controls
          Key([mod, "shift"], "space",
              lazy.layout.rotate(),
