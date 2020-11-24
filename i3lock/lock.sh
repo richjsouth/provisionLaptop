@@ -19,7 +19,7 @@ i3lock --nofork                 \
     \
     --clock			\
     --timecolor=eceff4ff	\
-    --timestr="%I:%M %p"	\
+    --timestr="%H:%M:%S"	\
     --time-font="Calvin and Hobbes"	\
     --timesize=125		\
     --timepos="500:900"		\
