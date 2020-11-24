@@ -5,14 +5,15 @@ i3lock --nofork                 \
     --keyhlcolor=ebcb8b00       \
     --bshlcolor=d8dee900	\
     --separatorcolor=00000000   \
-    --radius=50			\
-    --indpos="600:300"		\
+    --radius=20			\
+    --ring-width=3  \
+    --indpos="tx+950:h-90"		\
     \
     --insidevercolor=00000000	\
     --insidewrongcolor=00000000 \
-    --insidecolor=00000000	\
+    --insidecolor=fecf4dff	\
     \
-    --ringcolor=e59d1700        \
+    --ringcolor=ffffffff       \
     --ringvercolor=a3be8c00     \
     --ringwrongcolor=bf616a00   \
     \
