@@ -1,15 +1,23 @@
 {
     "telemetry.machineId": "dc2cdfd0c721d03ea8784d549382420655e576271c49301cea0df06ae04e3a46",
     "openedPathsList": {
-        "workspaces3": [],
+        "workspaces3": [
+            "file:///home/richsouth/Downloads"
+        ],
         "files2": [
+            "file:///home/richsouth/Documents/Homepage/Homepage/html/homepage.html",
+            "file:///home/richsouth/Documents/Homepage/html/homepage.html",
+            "file:///home/richsouth/.config/qtile/config.py",
+            "file:///home/richsouth/.config/picom.conf",
+            "file:///home/richsouth/.config/polybar/user_modules.ini",
             "file:///home/richsouth/.config/polybar/modules.ini",
             "file:///home/richsouth/.config/polybar/config.ini",
-            "file:///home/richsouth/.config/polybar/scripts/updates.sh",
-            "file:///home/richsouth/.config/polybar/user_modules.ini",
-            "file:///home/richsouth/.config/qtile/autostart.sh",
+            "file:///home/richsouth/Downloads/dotfiles-depreciated/.i3/config",
             "file:///etc/mopidy/mopidy.conf",
-            "file:///home/richsouth/.config/qtile/config.py"
+            "file:///home/richsouth/.config/mopidy/mopidy.conf",
+            "file:///home/richsouth/.config/qutebrowser/config.py",
+            "file:///home/richsouth/.config/polybar/scripts/updates.sh",
+            "file:///home/richsouth/.config/qtile/autostart.sh"
         ]
     },
     "lastKnownMenubarData": {
@@ -46,10 +54,81 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "fsPath": "/home/richsouth/Downloads",
+                                        "external": "file:///home/richsouth/Downloads",
+                                        "path": "/home/richsouth/Downloads",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Documents/Homepage/Homepage/html/homepage.html",
+                                        "path": "/home/richsouth/Documents/Homepage/Homepage/html/homepage.html",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Homepage/Homepage/html/homepage.html"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Documents/Homepage/html/homepage.html",
+                                        "path": "/home/richsouth/Documents/Homepage/html/homepage.html",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Homepage/html/homepage.html"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/.config/qtile/config.py",
+                                        "path": "/home/richsouth/.config/qtile/config.py",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/qtile/config.py"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/.config/picom.conf",
+                                        "path": "/home/richsouth/.config/picom.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/picom.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/.config/polybar/user_modules.ini",
+                                        "path": "/home/richsouth/.config/polybar/user_modules.ini",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/polybar/user_modules.ini"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -77,34 +156,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/richsouth/.config/polybar/scripts/updates.sh",
-                                        "path": "/home/richsouth/.config/polybar/scripts/updates.sh",
+                                        "external": "file:///home/richsouth/Downloads/dotfiles-depreciated/.i3/config",
+                                        "path": "/home/richsouth/Downloads/dotfiles-depreciated/.i3/config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/polybar/scripts/updates.sh"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/richsouth/.config/polybar/user_modules.ini",
-                                        "path": "/home/richsouth/.config/polybar/user_modules.ini",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/polybar/user_modules.ini"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/richsouth/.config/qtile/autostart.sh",
-                                        "path": "/home/richsouth/.config/qtile/autostart.sh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/qtile/autostart.sh"
+                                    "label": "~/Downloads/dotfiles-depreciated/.i3/config"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -121,12 +178,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/richsouth/.config/qtile/config.py",
-                                        "path": "/home/richsouth/.config/qtile/config.py",
+                                        "external": "file:///home/richsouth/.config/mopidy/mopidy.conf",
+                                        "path": "/home/richsouth/.config/mopidy/mopidy.conf",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/qtile/config.py"
+                                    "label": "~/.config/mopidy/mopidy.conf"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -169,8 +226,7 @@
                     },
                     {
                         "id": "workbench.action.files.saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -241,8 +297,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -318,10 +373,6 @@
                     {
                         "id": "editor.emmet.action.expandAbbreviation",
                         "label": "Emmet: E&&xpand Abbreviation"
-                    },
-                    {
-                        "id": "workbench.action.showEmmetCommands",
-                        "label": "E&&mmet..."
                     }
                 ]
             },
@@ -442,8 +493,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -787,23 +837,28 @@
                     },
                     {
                         "id": "editor.action.revealDefinition",
-                        "label": "Go to &&Definition"
+                        "label": "Go to &&Definition",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.revealDeclaration",
-                        "label": "Go to &&Declaration"
+                        "label": "Go to &&Declaration",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToTypeDefinition",
-                        "label": "Go to &&Type Definition"
+                        "label": "Go to &&Type Definition",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToImplementation",
-                        "label": "Go to &&Implementations"
+                        "label": "Go to &&Implementations",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToReferences",
-                        "label": "Go to &&References"
+                        "label": "Go to &&References",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1521,16 +1576,17 @@
     "themeBackground": "#fdf6e3",
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/richsouth/.config/VSCodium/Backups/1599045542036",
+            "folder": "file:///home/richsouth/Downloads",
+            "backupPath": "/home/richsouth/.config/VSCodium/Backups/2dc6c169a0f5911955cb9f872fda9d23",
             "uiState": {
                 "mode": 1,
                 "x": 12,
                 "y": 42,
-                "width": 946,
+                "width": 1896,
                 "height": 1006
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/home/richsouth/.config/polybar"
+    "pickerWorkingDir": "/home/richsouth/Documents/Homepage/Homepage/html"
 }

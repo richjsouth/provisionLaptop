@@ -1,0 +1,69 @@
+Looking for git in: git
+Using git 2.29.2 from git
+> git rev-parse --git-dir
+Open repository: /home/richsouth/Downloads/dotfiles-depreciated
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/richsouth/Downloads/dotfiles-depreciated/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git show --textconv :.i3/config
+> git ls-files --stage -- /home/richsouth/Downloads/dotfiles-depreciated/.i3/config
+> git cat-file -s 228fd60b793a1c37da4fc284f671647cb03ad0ae
+> git rev-parse --git-dir
+Open repository: /home/richsouth/.config
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :qtile/config.py
+> git ls-files --stage -- /home/richsouth/.config/qtile/config.py
+> git check-ignore -v -z --stdin
+> git cat-file -s daba3cec78fc6e5699c08ed77bee8da61861b422
+> git rev-parse --git-dir
+Open repository: /home/richsouth/.config/myPolybar
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/richsouth/.config/.git/modules/myPolybar/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :.i3/config
+> git ls-files --stage -- /home/richsouth/Downloads/dotfiles-depreciated/.i3/config
+> git cat-file -s 228fd60b793a1c37da4fc284f671647cb03ad0ae
+> git check-ignore -v -z --stdin
+> git show --textconv :.i3/config
+> git ls-files --stage -- /home/richsouth/Downloads/dotfiles-depreciated/.i3/config
+> git cat-file -s 228fd60b793a1c37da4fc284f671647cb03ad0ae
+> git show --textconv :qtile/config.py
+> git ls-files --stage -- /home/richsouth/.config/qtile/config.py
+> git cat-file -s daba3cec78fc6e5699c08ed77bee8da61861b422
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

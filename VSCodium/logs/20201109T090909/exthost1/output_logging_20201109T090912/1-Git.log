@@ -1,0 +1,65 @@
+Looking for git in: git
+Using git 2.29.2 from git
+> git rev-parse --git-dir
+Open repository: /home/richsouth/.config
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :qutebrowser/config.py
+> git ls-files --stage -- /home/richsouth/.config/qutebrowser/config.py
+> git cat-file -s 514aada33713049a3693599c8acabe9776845f00
+> git rev-parse --git-dir
+Open repository: /home/richsouth/.config/myPolybar
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/richsouth/.config/.git/modules/myPolybar/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :polybar/config.ini
+> git ls-files --stage -- /home/richsouth/.config/polybar/config.ini
+> git check-ignore -v -z --stdin
+> git show --textconv :polybar/modules.ini
+> git ls-files --stage -- /home/richsouth/.config/polybar/modules.ini
+> git check-ignore -v -z --stdin
+> git show --textconv :mopidy/mopidy.conf
+> git ls-files --stage -- /home/richsouth/.config/mopidy/mopidy.conf
+> git cat-file -s 4dc99ade6018b7ada02d1e5fe9220261b4054aa7
+> git check-ignore -v -z --stdin
+> git show --textconv :mopidy/mopidy.conf
+> git ls-files --stage -- /home/richsouth/.config/mopidy/mopidy.conf
+> git cat-file -s 4dc99ade6018b7ada02d1e5fe9220261b4054aa7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

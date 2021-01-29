@@ -1,0 +1,5 @@
+2021/01/22-16:11:21.912 6f16 Reusing MANIFEST /home/richsouth/.config/Signal/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2021/01/22-16:11:22.289 6f17 Level-0 table #5: started
+2021/01/22-16:11:22.293 6f17 Level-0 table #5: 496 bytes OK
+2021/01/22-16:11:22.298 6f17 Delete type=0 #3
+2021/01/22-16:11:22.299 6f17 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
