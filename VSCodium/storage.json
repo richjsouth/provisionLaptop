@@ -2,9 +2,19 @@
     "telemetry.machineId": "dc2cdfd0c721d03ea8784d549382420655e576271c49301cea0df06ae04e3a46",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/richsouth/Calibre%20Library/Unknown/B00AD9X85W%20EBOK%20%2814%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/B0040891ZS%20EBOK%20%2812%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/CR%21EV7AG9CRQN5M7EGBX9VKMXGM6PT3.azw%20%287%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/CR%21DBXQD7JY1H0NQ8J3ZXG1519K1XCS.azw%20%288%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/amzn1.drm-voucher.v1.55de4449-0b24-43b8-8e61-5d92ad5acfe4%20%286%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%289%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%2810%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%2811%29",
+            "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%282%29",
             "file:///home/richsouth/Downloads"
         ],
         "files2": [
+            "file:///home/richsouth/Documents/Ansible/provision-laptop.yaml",
             "file:///home/richsouth/Documents/Homepage/Homepage/html/homepage.html",
             "file:///home/richsouth/Documents/Homepage/html/homepage.html",
             "file:///home/richsouth/.config/qtile/config.py",
@@ -54,8 +64,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -64,7 +73,106 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/richsouth/Downloads",
+                                        "fsPath": "/home/richsouth/Calibre Library/Unknown/B00AD9X85W EBOK (14)",
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/B00AD9X85W%20EBOK%20%2814%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/B00AD9X85W EBOK (14)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/B00AD9X85W EBOK (14)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/B0040891ZS%20EBOK%20%2812%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/B0040891ZS EBOK (12)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/B0040891ZS EBOK (12)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/CR%21EV7AG9CRQN5M7EGBX9VKMXGM6PT3.azw%20%287%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/CR!EV7AG9CRQN5M7EGBX9VKMXGM6PT3.azw (7)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/CR!EV7AG9CRQN5M7EGBX9VKMXGM6PT3.azw (7)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/CR%21DBXQD7JY1H0NQ8J3ZXG1519K1XCS.azw%20%288%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/CR!DBXQD7JY1H0NQ8J3ZXG1519K1XCS.azw (8)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/CR!DBXQD7JY1H0NQ8J3ZXG1519K1XCS.azw (8)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/amzn1.drm-voucher.v1.55de4449-0b24-43b8-8e61-5d92ad5acfe4%20%286%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/amzn1.drm-voucher.v1.55de4449-0b24-43b8-8e61-5d92ad5acfe4 (6)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/amzn1.drm-voucher.v1.55de4449-0b24-43b8-8e61-5d92ad5acfe4 (6)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%289%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/B00A3EODEM EBOK (9)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/B00A3EODEM EBOK (9)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%2810%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/B00A3EODEM EBOK (10)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/B00A3EODEM EBOK (10)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%2811%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/B00A3EODEM EBOK (11)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/B00A3EODEM EBOK (11)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Calibre%20Library/Unknown/B00A3EODEM%20EBOK%20%282%29",
+                                        "path": "/home/richsouth/Calibre Library/Unknown/B00A3EODEM EBOK (2)",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Calibre Library/Unknown/B00A3EODEM EBOK (2)"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/richsouth/Downloads",
                                         "path": "/home/richsouth/Downloads",
                                         "scheme": "file"
@@ -74,6 +182,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/richsouth/Documents/Ansible/provision-laptop.yaml",
+                                        "path": "/home/richsouth/Documents/Ansible/provision-laptop.yaml",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/Ansible/provision-laptop.yaml"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -175,17 +294,6 @@
                                     "label": "/etc/mopidy/mopidy.conf"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/richsouth/.config/mopidy/mopidy.conf",
-                                        "path": "/home/richsouth/.config/mopidy/mopidy.conf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/mopidy/mopidy.conf"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -218,15 +326,18 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Save"
+                        "label": "&&Save",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Save &&As..."
+                        "label": "Save &&As...",
+                        "enabled": false
                     },
                     {
-                        "id": "workbench.action.files.saveAll",
-                        "label": "Save A&&ll"
+                        "id": "saveAll",
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -280,6 +391,10 @@
                                 {
                                     "id": "workbench.action.selectIconTheme",
                                     "label": "File &&Icon Theme"
+                                },
+                                {
+                                    "id": "workbench.action.selectProductIconTheme",
+                                    "label": "&&Product Icon Theme"
                                 }
                             ]
                         }
@@ -289,11 +404,13 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&vert File"
+                        "label": "Re&&vert File",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Close Editor"
+                        "label": "&&Close Editor",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.closeFolder",
@@ -342,11 +459,13 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find"
+                        "label": "&&Find",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace"
+                        "label": "&&Replace",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -493,7 +612,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -696,7 +816,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -920,7 +1041,8 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "Open &&Configurations",
+                        "enabled": false
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1125,7 +1247,7 @@
                     },
                     {
                         "id": "workbench.action.toggleDevTools",
-                        "label": "&&Toggle Developer Tools"
+                        "label": "Toggle Developer Tools"
                     },
                     {
                         "id": "workbench.action.openProcessExplorer",
@@ -1576,17 +1698,17 @@
     "themeBackground": "#fdf6e3",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/richsouth/Downloads",
-            "backupPath": "/home/richsouth/.config/VSCodium/Backups/2dc6c169a0f5911955cb9f872fda9d23",
+            "folder": "file:///home/richsouth/Calibre%20Library/Unknown/B00AD9X85W%20EBOK%20%2814%29",
+            "backupPath": "/home/richsouth/.config/VSCodium/Backups/8214d38948bda0c03d4d86563376ce17",
             "uiState": {
                 "mode": 1,
-                "x": 12,
-                "y": 42,
-                "width": 1896,
-                "height": 1006
+                "x": 970,
+                "y": 40,
+                "width": 936,
+                "height": 491
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/home/richsouth/Documents/Homepage/Homepage/html"
+    "pickerWorkingDir": "/home/richsouth/Documents/Ansible"
 }

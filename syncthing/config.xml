@@ -1,7 +1,48 @@
 <configuration version="32">
+    <folder id="4gdjy-h4de4" label="Pictures" path="/home/richsouth/Photos" type="receiveonly" rescanIntervalS="30" fsWatcherEnabled="false" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="false">
+        <filesystemType>basic</filesystemType>
+        <device id="I6MIURN-VTTLIFW-ZUROH3J-PYZSHAB-QFJD7F5-NJYY73L-3TTKC56-NKZN2AD" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="">0</minDiskFree>
+        <versioning type="simple">
+            <param key="cleanoutDays" val="0"></param>
+            <param key="command" val=""></param>
+            <param key="keep" val="10"></param>
+            <param key="maxAge" val="0"></param>
+            <param key="versionsPath" val=""></param>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>0</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+    </folder>
     <folder id="default" label="Default Folder" path="/home/richsouth/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" introducedBy=""></device>
+        <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <minDiskFree unit="">0</minDiskFree>
         <versioning>
             <cleanupIntervalS>0</cleanupIntervalS>
@@ -28,10 +69,14 @@
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
-    <folder id="o11kt-1i0rm" label="Documents" path="/home/richsouth/Documents" type="sendreceive" rescanIntervalS="1800" fsWatcherEnabled="false" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="false">
+    <folder id="jokb2-fghz6" label="Music" path="/home/richsouth/Downloads/Music" type="sendreceive" rescanIntervalS="1800" fsWatcherEnabled="false" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="false">
         <filesystemType>basic</filesystemType>
-        <device id="I6MIURN-VTTLIFW-ZUROH3J-PYZSHAB-QFJD7F5-NJYY73L-3TTKC56-NKZN2AD" introducedBy=""></device>
-        <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" introducedBy=""></device>
+        <device id="I6MIURN-VTTLIFW-ZUROH3J-PYZSHAB-QFJD7F5-NJYY73L-3TTKC56-NKZN2AD" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <minDiskFree unit="">0</minDiskFree>
         <versioning type="simple">
             <param key="cleanoutDays" val="0"></param>
@@ -56,7 +101,46 @@
         <markerName>.stfolder</markerName>
         <copyOwnershipFromParent>false</copyOwnershipFromParent>
         <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>0</maxConcurrentWrites>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+    </folder>
+    <folder id="o11kt-1i0rm" label="Documents" path="/home/richsouth/Documents" type="sendreceive" rescanIntervalS="1800" fsWatcherEnabled="false" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="false">
+        <filesystemType>basic</filesystemType>
+        <device id="I6MIURN-VTTLIFW-ZUROH3J-PYZSHAB-QFJD7F5-NJYY73L-3TTKC56-NKZN2AD" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="">0</minDiskFree>
+        <versioning type="simple">
+            <param key="cleanoutDays" val="0"></param>
+            <param key="command" val=""></param>
+            <param key="keep" val="10"></param>
+            <param key="maxAge" val="0"></param>
+            <param key="versionsPath" val=""></param>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>0</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
         <disableFsync>false</disableFsync>
         <blockPullOrder>standard</blockPullOrder>
         <copyRangeMethod>standard</copyRangeMethod>
@@ -69,8 +153,10 @@
         <autoAcceptFolders>false</autoAcceptFolders>
         <maxSendKbps>0</maxSendKbps>
         <maxRecvKbps>0</maxRecvKbps>
-        <pendingFolder time="2020-11-06T15:27:21Z" id="bnd-l21_31p7-photos" label="Camera"></pendingFolder>
+        <pendingFolder time="2020-11-20T15:57:42Z" id="bnd-l21_31p7-photos" label="Camera"></pendingFolder>
         <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
     </device>
     <device id="R75BCWE-RWTALN3-FGIVNQU-TVX7KLR-5JJP5IB-HIUSENW-IDBPBQM-GOHLEQ2" name="manjaro-hp-laptop" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
@@ -79,6 +165,8 @@
         <maxSendKbps>0</maxSendKbps>
         <maxRecvKbps>0</maxRecvKbps>
         <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
     </device>
     <gui enabled="true" tls="false" debugging="false">
         <address>127.0.0.1:8080</address>
@@ -134,5 +222,6 @@
         <databaseTuning>auto</databaseTuning>
         <maxConcurrentIncomingRequestKiB>0</maxConcurrentIncomingRequestKiB>
         <announceLANAddresses>true</announceLANAddresses>
+        <sendFullIndexOnUpgrade>false</sendFullIndexOnUpgrade>
     </options>
 </configuration>

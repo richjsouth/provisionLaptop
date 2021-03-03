@@ -38,3 +38,8 @@
 2021-01-21 17:03:27 Latest version is 0.10.8
 2021-01-21 17:03:27 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v0.10.8/obsidian-0.10.8.asar.gz
 2021-01-21 17:03:47 Failed to perform update
+2021-02-11 11:19:11 Loading main app package /tmp/.mount_obsidixfr9VP/resources/obsidian.asar
+2021-02-11 11:19:11 Checking for update using Github
+2021-02-11 11:19:11 Failed to check for update using Github (net module can only be used after app is ready)
+2021-02-11 11:19:11 Checking for update using obsidian.md
+2021-02-11 11:19:11 Failed to check for update using obsidian.md (net module can only be used after app is ready)
