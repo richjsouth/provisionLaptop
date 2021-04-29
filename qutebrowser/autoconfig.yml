@@ -6,6 +6,8 @@
 
 config_version: 2
 settings:
+  content.geolocation:
+    https://openweathermap.org: true
   content.notifications:
     https://beta.protonmail.com: true
   content.user_stylesheets:
