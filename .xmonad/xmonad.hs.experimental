@@ -126,7 +126,6 @@ myStartupHook = do
           spawnOnce "flameshot"
           spawnOnce "kdeconnect-indicator"
           spawnOnce "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
-          spawnOnce "conky -c $HOME/.config/conky/xmonad.conkyrc"
           -- spawnOnce "/usr/bin/emacs --daemon &" -- emacs daemon for the emacsclient
           -- spawnOnce "kak -d -s mysession &"  -- kakoune daemon for better performance
           -- spawnOnce "urxvtd -q -o -f &"      -- urxvt daemon for better performance
@@ -805,28 +804,23 @@ myKeys home =
         -- , ("M-S-<Return>", spawn "dmenu_run -i -p \"Run: \"") -- Dmenu
         --, ("M-M1-<Return>", spawn "rofi -show drun -config ~/.config/rofi/themes/dt-dmenu.rasi -display-drun \"Run: \" -drun-display-format \"{name}\"") -- Rofi
         , ("M-M1-<Return>", spawn "rofi -show drun -font 'Noto Sans 8'") -- Rofi
---rofi -show drun -font 'Noto Sans 8'")
-    -- Other Prompts
-       -- , ("M-p c", calcPrompt dtXPConfig' "qalc") -- calcPrompt
-       -- , ("M-p e", editPrompt home)               -- editPrompt
-        , ("M-p m", manPrompt dtXPConfig)          -- manPrompt
-       -- , ("M-p p", passPrompt dtXPConfig)         -- passPrompt
-        , ("M-p g", passGeneratePrompt dtXPConfig) -- passGeneratePrompt
-        , ("M-p r", passRemovePrompt dtXPConfig)   -- passRemovePrompt
-       -- , ("M-p s", sshPrompt dtXPConfig)          -- sshPrompt
-        , ("M-p x", xmonadPrompt dtXPConfig)       -- xmonadPrompt
-       --, ("M-p q", scrotPrompt home True)         -- scrotPrompt True
-        , ("M-p z", scrotPrompt home False)        -- scrotPrompt False
 
---dmenu replacesments for rofi
-        , ("M-p s", spawn "dmsearch") -- search various search engines
-        , ("M-p o", spawn "dmqute")   -- qutebrowser bookmarks/history
-        , ("M-p k", spawn "dmkill")   -- kill processes
-        , ("M-p q", spawn "dmlogout") -- logout menu
-        , ("M-p c", spawn "dmconf")   -- edit config files
+-- Other Dmenu Prompts
+    -- In Xmonad and many tiling window managers, M-p is the default keybinding to
+    -- launch dmenu_run, so I've decided to use M-p plus KEY for these dmenu scripts.
+        , ("M-p c", spawn "~/.config/dmscripts/dcolors")  -- pick color from our scheme
+        , ("M-p e", spawn "~/.config/dmscripts/dmconf")   -- edit config files
+        , ("M-p i", spawn "~/.config/dmscripts/dmscrot")  -- screenshots (images)
+        , ("M-p k", spawn "~/.config/dmscripts/dmkill")   -- kill processes
+        , ("M-p m", spawn "~/.config/dmscripts/dman")     -- manpages
+        , ("M-p o", spawn "~/.config/dmscripts/dmqute")   -- qutebrowser bookmarks/history
+        , ("M-p p", spawn "passmenu")                    -- passmenu
+        , ("M-p q", spawn "~/.config/dmscripts/dmlogout") -- logout menu
+        , ("M-p r", spawn "~/.config/dmscripts/dmred")    -- reddio (a reddit viewer)
+        , ("M-p s", spawn "~/.config/dmscripts/dmsearch") -- search various search engines
 
     -- Useful programs to have a keybinding for launch
-        , ("M-<Return>", spawn (myTerminal ++ " -e zsh"))
+        , ("M-<Return>", spawn (myTerminal ++ " -e fish"))
         , ("M-b", spawn (myBrowser ++ " www.youtube.com/c/DistroTube/"))
         , ("M-M1-h", spawn (myTerminal ++ " -e htop"))
 
@@ -857,7 +851,7 @@ myKeys home =
         , ("C-g b", bringSelected $ mygridConfig myColorizer) -- bring selected window
 
     -- Tree Select
-       -- , ("C-t t", treeselectAction tsDefaultConfig)
+        , ("C-t t", treeselectAction tsDefaultConfig)
 
     -- Windows navigation
         , ("M-m", windows W.focusMaster)  -- Move focus to the master window
