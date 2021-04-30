@@ -824,11 +824,15 @@ myKeys home =
         , ("M-p k", spawn "dmkill")   -- kill processes
         , ("M-p q", spawn "dmlogout") -- logout menu
         , ("M-p c", spawn "dmconf")   -- edit config files
+        , ("M-p a", spawn "dmsounds") -- ambiant sound player
 
     -- Useful programs to have a keybinding for launch
         , ("M-<Return>", spawn (myTerminal ++ " -e zsh"))
-        , ("M-b", spawn (myBrowser ++ " www.youtube.com/c/DistroTube/"))
-        , ("M-M1-h", spawn (myTerminal ++ " -e htop"))
+       -- , ("M-b", spawn (myBrowser ++ " www.youtube.com/c/DistroTube/"))
+        , ("M-M1-b", spawn (myTerminal ++ " -e bashtop"))
+
+        , ("M-M1-h", spawn ("variety -p"))
+        , ("M-M1-l", spawn ("variety -n"))
 
     -- Kill windows
         , ("M-S-c", kill1)     -- Kill the currently focused client
