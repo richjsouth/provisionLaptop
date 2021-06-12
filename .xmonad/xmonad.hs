@@ -819,12 +819,13 @@ myKeys home =
         , ("M-p z", scrotPrompt home False)        -- scrotPrompt False
 
 --dmenu replacesments for rofi
-        , ("M-p s", spawn "dmsearch") -- search various search engines
-        , ("M-p o", spawn "dmqute")   -- qutebrowser bookmarks/history
-        , ("M-p k", spawn "dmkill")   -- kill processes
-        , ("M-p q", spawn "dmlogout") -- logout menu
-        , ("M-p c", spawn "dmconf")   -- edit config files
-        , ("M-p a", spawn "dmsounds") -- ambiant sound player
+        , ("M-p s", spawn "dm-websearch") -- search various search engines
+        , ("M-p o", spawn "dm-bookman")   -- qutebrowser bookmarks/history
+        , ("M-p k", spawn "dm-kill")   -- kill processes
+        , ("M-p q", spawn "dm-logout") -- logout menu
+        , ("M-p c", spawn "dm-confedit")   -- edit config files
+        , ("M-p a", spawn "dm-sounds") -- ambiant sound player
+        , ("M-p m", spawn "dm-music") -- music player
 
     -- Useful programs to have a keybinding for launch
         , ("M-<Return>", spawn (myTerminal ++ " -e zsh"))
@@ -910,6 +911,7 @@ myKeys home =
         , ("M-C-<Return>", namedScratchpadAction myScratchPads "terminal")
         , ("M-C-c", namedScratchpadAction myScratchPads "mocp")
         , ("M-C-b", namedScratchpadAction myScratchPads "bashtop")
+        , ("M-C-t", spawn "urxvt -geometry 55x15 -e tty-clock -s -c -C 1")
 
     -- Controls for mocp music player (SUPER-u followed by a key)
         , ("M-u p", spawn "mocp --play")
