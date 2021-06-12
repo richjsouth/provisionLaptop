@@ -6,38 +6,29 @@
 # `cp /etc/dmscripts/config ${HOME}/.config/dmscripts/config`
 
 # Defined variables, modify anything in quotes to your prefered software
-
-DMENU="dmenu"
-# DMENU="rofi -dmenu"
-
-#DMBROWSER="brave"
 DMBROWSER="qutebrowser"
-
 DMTERM="st -e"
-# DMTERM="alacritty -e"
-
-# DMEDITOR="emacsclient -c -a emacs"
-DMEDITOR="${DMTERM} -e nvim"
 
 # dm-logout
 logout_locker='slock'
-# logout_locker='dm-tool lock'
 
 # dm-bookman 
 bookman_show_source=1
+
 
 # dm-sounds
 sounds_dir="${HOME}/.config/dmscripts/dmsounds"
 
 # dm-setbg
-setbg_dir="${HOME}/wallpapers"
+setbg_dir="${HOME}/Wallpapers"
 
 # dm-maim
-maim_dir="${HOME}/Screenshots"
+maim_dir="${HOME}/Pictures/Screenshots"
 maim_file_prefix="maim"
 
+
 # dm-confedit
-confedit_editor="$DMEDITOR"
+confedit_editor="vscodium"
 declare -A confedit_list
 confedit_list[confedit]="$HOME/.config/dmscripts/config"
 confedit_list[alacritty]="$HOME/.config/alacritty/alacritty.yml"
@@ -70,7 +61,7 @@ confedit_list[stumpwm]="$HOME/.config/stumpwm/config"
 confedit_list[surf]="$HOME/surf-distrotube/config.def.h"
 confedit_list[sxhkd]="$HOME/.config/sxhkd/sxhkdrc"
 confedit_list[tabbed]="$HOME/tabbed-distrotube/config.def.h"
-# confedit_list[termite]="$HOME/.config/termite/config" # Termite is deprecated, you should be using alacritty or another terminal emulator
+confedit_list[termite]="$HOME/.config/termite/config"
 confedit_list[vifm]="$HOME/.config/vifm/vifmrc"
 confedit_list[vim]="$HOME/.vimrc"
 confedit_list[xmobar mon1 ]="$HOME/.config/xmobar/xmobarrc0"
@@ -82,6 +73,7 @@ confedit_list[xresources]="$HOME/.Xresources"
 confedit_list[zsh]="$HOME/.zshrc"
 
 # dm-reddit config
+
 declare -a reddit_list=(
 "r/archlinux"
 "r/bash"
@@ -99,7 +91,8 @@ declare -a reddit_list=(
 )
 
 # Search engine config 
-websearch_browser="$DMBROWSER"
+
+websearch_browser="qutebrowser"
 declare -A websearch
 # Syntax:
 # websearch[name]="https://www.example.com/search?q="
@@ -118,9 +111,8 @@ websearch[bible keyword]="https://www.biblegateway.com/quicksearch/?quicksearch=
 websearch[bbcnews]="https://www.bbc.co.uk/search?q="
 websearch[cnn]="https://www.cnn.com/search?q="
 websearch[googlenews]="https://news.google.com/search?q="
-websearch[imdb]="https://www.imdb.com/find?q="
-websearch[wikipedia]="https://en.wikipedia.org/w/index.php?search="
-websearch[wiktionary]="https://en.wiktionary.org/w/index.php?search="
+websearch[wikipedia]="https://en.wikipedia.org/wiki/"
+websearch[wiktionary]="https://en.wiktionary.org/wiki/"
 # Social Media
 websearch[reddit]="https://www.reddit.com/search/?q="
 websearch[odysee]="https://odysee.com/$/search?q="
@@ -144,14 +136,15 @@ websearch[stackoverflow]="https://stackoverflow.com/search?q="
 # Etc
 
 # dm-youtube config
-youtube_browser="$DMBROWSER"
+
+youtube_browser="qutebrowser"
 # Think of these as your "subscribed channels", name the channel in the square brackets then put the channel URL in the quotation marks
 # Syntax: youtube_channels[name]="https://www.youtube.com/link/to/channel"
-
 declare -A youtube_channels
 youtube_channels[distrotube]="https://www.youtube.com/c/DistroTube/featured"
 
 # dm-colpick config
+
 declare -A colpick_list
 colpick_list[black]="#282a36"
 colpick_list[red]="#ff5555"
@@ -164,4 +157,4 @@ colpick_list[white]="#f1f1f0"
 colpick_list[orange]="#ffb86c"
 colpick_list[purple]="#bd9cf9"
 
-_revision=12
+_revision=10
