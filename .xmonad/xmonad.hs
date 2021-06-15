@@ -88,7 +88,7 @@ myModMask = mod4Mask       -- Sets modkey to super/windows key
 myTerminal :: String
 --myTerminal = "st"   -- Sets default terminal
 myTerminal = "alacritty" -- Sets default terminal
-myScratchPadTerminal = "st" -- Sets the default terminal for scratchpads
+--myScratchpadTerminal = "st" -- Sets the default terminal for scratchpads
 
 myBrowser :: String
 myBrowser = "qutebrowser "               -- Sets qutebrowser as browser for tree select
@@ -142,7 +142,7 @@ myColorizer = colorRangeFromClassName
 
 
 
-
+{- |
 
 -- gridSelect menu layout
 mygridConfig :: p -> GSConfig Window
@@ -478,7 +478,7 @@ myTreeNavigation = M.fromList
     , ((mod4Mask .|. altMask, xK_w), TS.moveTo ["+ Bookmarks", "+ Linux", "+ Window Managers"])
     ]
 
-
+-}
 
 
 dtXPConfig :: XPConfig
@@ -584,6 +584,7 @@ dtXPKeymap = M.fromList $
      , (xK_Escape, quit)
      ]
 
+{- |
 archwiki, ebay, news, reddit, urban, yacy :: S.SearchEngine
 
 archwiki = S.searchEngine "archwiki" "https://wiki.archlinux.org/index.php?search="
@@ -614,33 +615,52 @@ searchList = [ ("a", archwiki)
              , ("S-y", yacy)
              , ("z", S.amazon)
              ]
-
+-}
 myScratchPads :: [NamedScratchpad]
 myScratchPads = [ NS "terminal" spawnTerm findTerm manageTerm
                 , NS "mocp" spawnMocp findMocp manageMocp
+                , NS "calculator" spawnCalc findCalc manageCalc
+                , NS "clock" spawnClock findClock manageClock
+                , NS "radio" spawnRadio findRadio manageRadio
                 ]
   where
-   --  spawnTerm  = myTerminal ++ " -n scratchpad"
-    spawnTerm = myScratchPadTerminal ++ " -m scratchpad"
-    findTerm   = resource =? "scratchpad"
+    spawnTerm  = myTerminal ++ " -t scratchpad"
+    findTerm = title =? "scratchpad"
+    -- findTerm   = resource =? "scratchpad"
     manageTerm = customFloating $ W.RationalRect l t w h
                where
                  h = 0.9
                  w = 0.9
                  t = 0.95 -h
                  l = 0.95 -w
-    -- spawnMocp  = myTerminal ++ " -n mocp 'mocp'"
-    spawnMocp = myScratchPadTerminal ++ " -n mocp 'mocp'"
-    findMocp   = resource =? "mocp"
+    spawnMocp  = myTerminal ++ " -t mocp -e mocp"
+    --spawnMocp = myScratchPadTerminal ++ " -n mocp 'mocp'"
+    findMocp   = title =? "mocp"
     manageMocp = customFloating $ W.RationalRect l t w h
                where
                  h = 0.9
                  w = 0.9
                  t = 0.95 -h
                  l = 0.95 -w
-    spawnBashtop = myTerminal ++ " -n bashtop 'bashtop'"
-    findBashtop   = resource =? "bashtop"
-    manageBashtop = customFloating $ W.RationalRect l t w h
+    spawnCalc = "qalculate-gtk"
+    findCalc   = className =? "Qalculate-gtk"
+    manageCalc = customFloating $ W.RationalRect l t w h
+               where
+                 h = 0.9
+                 w = 0.9
+                 t = 0.95 -h
+                 l = 0.95 -w
+    spawnClock = myScratchpadTerminal ++ " -n clock -e tty-clock -s -c -C 5"
+    findClock = className =? "clock"
+    manageClock = customFloating $ W.RationalRect l t w h
+               where
+                 h = 0.9
+                 w = 0.9
+                 t = 0.95 -h
+                 l = 0.95 -w
+    spawnRadio  = myScratchpadTerminal ++ " -n radioactive -e radioactive"
+    findRadio  = className =? "radioactive"
+    manageRadio = customFloating $ W.RationalRect l t w h
                where
                  h = 0.9
                  w = 0.9
@@ -809,7 +829,7 @@ myKeys home =
     -- Other Prompts
        -- , ("M-p c", calcPrompt dtXPConfig' "qalc") -- calcPrompt
        -- , ("M-p e", editPrompt home)               -- editPrompt
-        , ("M-p m", manPrompt dtXPConfig)          -- manPrompt
+       -- , ("M-p m", manPrompt dtXPConfig)          -- manPrompt
        -- , ("M-p p", passPrompt dtXPConfig)         -- passPrompt
         , ("M-p g", passGeneratePrompt dtXPConfig) -- passGeneratePrompt
         , ("M-p r", passRemovePrompt dtXPConfig)   -- passRemovePrompt
@@ -818,7 +838,7 @@ myKeys home =
        --, ("M-p q", scrotPrompt home True)         -- scrotPrompt True
         , ("M-p z", scrotPrompt home False)        -- scrotPrompt False
 
---dmenu replacesments for rofi
+--dmenu replacements for rofi
         , ("M-p s", spawn "dm-websearch") -- search various search engines
         , ("M-p o", spawn "dm-bookman")   -- qutebrowser bookmarks/history
         , ("M-p k", spawn "dm-kill")   -- kill processes
@@ -855,7 +875,7 @@ myKeys home =
         , ("M-i", incWindowSpacing 4)           -- Increase window spacing
         , ("M-S-d", decScreenSpacing 4)         -- Decrease screen spacing
         , ("M-S-i", incScreenSpacing 4)         -- Increase screen spacing
-
+{- |
     -- Grid Select (CTR-g followed by a key)
         , ("C-g g", spawnSelected' myAppGrid)                 -- grid select favorite apps
         , ("C-g t", goToSelected $ mygridConfig myColorizer)  -- goto selected window
@@ -863,7 +883,7 @@ myKeys home =
 
     -- Tree Select
        -- , ("C-t t", treeselectAction tsDefaultConfig)
-
+-}
     -- Windows navigation
         , ("M-m", windows W.focusMaster)  -- Move focus to the master window
         , ("M-j", windows W.focusDown)    -- Move focus to the next window
@@ -909,9 +929,10 @@ myKeys home =
 
     -- Scratchpads
         , ("M-C-<Return>", namedScratchpadAction myScratchPads "terminal")
-        , ("M-C-c", namedScratchpadAction myScratchPads "mocp")
-        , ("M-C-b", namedScratchpadAction myScratchPads "bashtop")
-        , ("M-C-t", spawn "urxvt -geometry 55x15 -e tty-clock -s -c -C 1")
+        , ("M-s m", namedScratchpadAction myScratchPads "mocp")
+        , ("M-s c", namedScratchpadAction myScratchPads "calculator")
+        , ("M-C-t", namedScratchpadAction myScratchPads "clock")
+        , ("M-C-r", namedScratchpadAction myScratchPads "radio")
 
     -- Controls for mocp music player (SUPER-u followed by a key)
         , ("M-u p", spawn "mocp --play")
