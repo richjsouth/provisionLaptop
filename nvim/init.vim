@@ -10,7 +10,7 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
 set number                     " Show current line number
@@ -31,9 +31,30 @@ Plug 'jremmen/vim-ripgrep'
 " Plug 'git@github.com:kien/ctrlp.vim.git'
 " Plug 'valloric/youcompleteme'
 Plug 'mbbill/undotree'
+Plug 'vim-airline/vim-airline'
+
+" Telescope Requirements
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+" Telescope Plug-ins
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' } " Fuzzy Search
 
 
 call plug#end()
 
+" Personal Settings
 colorscheme gruvbox
 set background=dark
+let g:airline_powerline_fonts = 1
+
+" Telescope Preferences
+lua << EOF
+require('telescope').setup{
+    defaults = {
+          prompt_prefix = "> "
+    }
+}
+require('telescope').load_extension('fzf') -- ripgrep required
+EOF
