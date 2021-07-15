@@ -15,13 +15,16 @@ set undofile
 set incsearch
 set number                     " Show current line number
 set relativenumber             " Show relative line numbers
+set cursorline
+" set colorcolumn=80
+" highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+let mapleader = " "
 
 " Vim Plug-ins install with Vim Plug
 " https://github.com/junegunn/vim-plug
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/pluggins')
+" call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
 Plug 'jremmen/vim-ripgrep'
@@ -32,6 +35,7 @@ Plug 'jremmen/vim-ripgrep'
 " Plug 'valloric/youcompleteme'
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
 
 " Telescope Requirements
 Plug 'nvim-lua/popup.nvim'
@@ -39,8 +43,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Telescope Plug-ins
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' } " Fuzzy Search
-
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' } 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  
 
 call plug#end()
 
@@ -53,8 +57,14 @@ let g:airline_powerline_fonts = 1
 lua << EOF
 require('telescope').setup{
     defaults = {
-          prompt_prefix = "> "
-    }
+          prompt_prefix = "> ",
+    },
+require('telescope').load_extension('fzf'), -- ripgrep required
+jolor_devicons = true,
+file_previewer = require'telescope.previewers'.vim_buffer_cat.new, -- Install bat first
+grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
+qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+-- Developer configurations: Not meant for general override
+buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
 }
-require('telescope').load_extension('fzf') -- ripgrep required
 EOF
